@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    font-family: "Montserrat";
+}
+
+.containerDynamic{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    min-width: 360px;
+    padding: 1em;
+}
+
+.topField{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemsPerPageContainer, .searchFields{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@media(max-width:850px){
+    .topField{
+        flex-direction: column;
+    }
+
+    .itemsPerPageContainer, .searchFields{
+        margin-top: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#itemsPerPage{
+    border: none;
+    color: #f0f0f0;
+    background-color: lightcoral;
+}
+
+
+.updateItemsPerPage, .searchBtn{
+    background-color: lightcoral;
+    border-radius: 900px;
+    color: #f0f0f0;
+    border: none;
+    width: 6em;
+    height: 2em;
+    margin-left: 1em;
+}
+
+.tabletContent{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.itemsFromDb{
+    border-bottom: 1px solid lightgray;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.forPagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageNumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    margin: 0 0.2em;
+    padding: 0.1em;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+
+.pageNumber:hover{
+    background-color: lightcoral;
+    color: #f0f0f0;
+}
+
+.pageNumberActive{
+    background-color: darkred;
+    color: #ffffff;
+}
+
+.noSearchResultBackToContents{
+    cursor: pointer;
+    color: darkslateblue;
+}

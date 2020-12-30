@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Google Sheets JSON Endpoint</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="containerDynamic">
+            <div class="topField">
+                <div class="itemsPerPageContainer">
+                    <label for="itemsPerPage">Items Per Page:  </label>
+                    <select name="itemsPerPage" id="itemsPerPage">
+                        <option value=5>5</option>
+                        <option value=10>10</option>
+                        <option value=20>20</option>
+                        <option value=50>50</option>
+                        <option value=100>100</option>
+                        <option value=200>200</option>
+                    </select>
+                    <button class="updateItemsPerPage">Update</button>
+                </div>
+
+                <div class="searchFields">
+                    <input type="search" class="searchArea">
+                    <button class="searchBtn">Search</button>
+                </div>
+            </div>
+            
+            <!-- MAIN TABLE WITH RESULTS-->
+            <div class="tabletContent"></div>
+            
+            <!-- PAGINATION -->
+            <div class="forPagination"></div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
